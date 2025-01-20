@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "main"; 
+  src: url("../public/fonts/main.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "funky";
+  src: url("../public/fonts/funky.ttf") format("truetype");
+}
+
+button{
+  font-family:'Main';
+  background-color: #2f285d;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: 0.5rem;
+  color: #938ac8;
+  border-radius: 1.5rem;
+  border: 2px solid #494082;
+}
+
+button:hover{
+  background-color: #42387f;
+  color: #938ac8;
+  border: 2px solid #494082;
+}
