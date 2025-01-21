@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import AboutSection from "./aboutSection";
+import "./heroSection.css";
 
 function HeroSection() {
   const ref = useRef(null);
@@ -46,15 +47,19 @@ function HeroSection() {
     <>
       <div className="hero-container" id="home">
         <video src="/bg2.mp4" autoPlay loop muted />
-        <h2>{text} I&apos;m</h2>
-        <h1>Aurora Shi,</h1>
-        <p>A Software Engineering student at the University of Waterloo</p>
-        <div className="field">
-          <div className="scroll" onClick={scrollAbout}></div>
+        <div className="hero-content">
+          <h2 style={{ marginBottom: "2rem" }}>{text} I&apos;m</h2>
+          <h1 style={{ marginBottom: "2rem" }}>Aurora Shi,</h1>
+          <p style={{ marginBottom: "2rem" }}>
+            A Software Engineering student at the University of Waterloo
+          </p>
+          <div className="scroll-container">
+            <div className="scroll" onClick={scrollAbout}></div>
+          </div>
         </div>
       </div>
       <section ref={ref} id="about">
-        <AboutSection/>
+        <AboutSection />
       </section>
     </>
   );

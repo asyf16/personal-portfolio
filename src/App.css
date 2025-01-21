@@ -1,15 +1,19 @@
-@font-face {
-  font-family: "main"; 
-  src: url("../public/fonts/main.otf") format("truetype");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-@font-face {
-  font-family: "funky";
-  src: url("../public/fonts/funky.ttf") format("truetype");
+body {
+  background-color: #0a0a11;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-button{
-  font-family:'Main';
+button {
+  font-family: "Main";
   background-color: #2f285d;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -21,8 +25,55 @@ button{
   border: 2px solid #494082;
 }
 
-button:hover{
+button:hover {
   background-color: #42387f;
   color: #938ac8;
   border: 2px solid #494082;
+}
+
+h1 {
+  color: rgb(208, 185, 236);
+  font-size: 80px;
+  font-family: "Main";
+}
+
+h1:hover {
+  text-shadow: 0 0 15px rgb(144, 119, 174);
+  transition: all 0.2s ease-out;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: "main";
+  src: url("../public/fonts/main.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "funky";
+  src: url("../public/fonts/funky.ttf") format("truetype");
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #0a0818; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #686195; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
 }

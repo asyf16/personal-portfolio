@@ -1,11 +1,7 @@
 import  { useEffect } from "react";
-import "./Aboutinfo.css";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram, faLinkedin  } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -18,7 +14,6 @@ function AboutSection() {
       <div className="wrap">
         <div className="one">
           <center>
-            {" "}
             <img
               data-aos="fade-in"
               src="https://i.imgur.com/f1RKanu.png"
@@ -39,38 +34,38 @@ function AboutSection() {
             </p>
           </div>
           <div data-aos="fade-in" data-aos-delay="800" className="socials">
-            <Link
+            <a
               className="social-icon-link instagram"
-              to="https://www.instagram.com/aurorashi16/"
+              href="https://www.instagram.com/aurorashi16/"
               target="_blank"
             >
               <FontAwesomeIcon icon={faInstagram} />
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link github"
-              to="https://github.com/asyf16"
+              href="https://github.com/asyf16"
               target="_blank"
             >
               <FontAwesomeIcon icon={faGithub} />
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link linkedin"
-              to="https://www.linkedin.com/in/aurora-shi-387656247/"
+              href="https://www.linkedin.com/in/aurora-shi-387656247/"
               target="_blank"
             >
               <FontAwesomeIcon icon={faLinkedin} />
-            </Link>
+            </a>
 
-            <Link
+            <a
               className="social-icon-link download"
-              to="https://drive.google.com/drive/folders/1LxYEXHacO-xeabSRKWcw-p50hZqi-ae6?usp=drive_link"
+              href="https://drive.google.com/drive/folders/1LxYEXHacO-xeabSRKWcw-p50hZqi-ae6?usp=drive_link"
               target="_blank"
             >
               <FontAwesomeIcon icon={faDownload} />
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link ring"
-              to="https://se-webring.xyz/"
+              href="https://se-webring.xyz/"
               target="_blank"
             >
               <svg
@@ -88,7 +83,7 @@ function AboutSection() {
                   fill="#938ac8"
                 />
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
