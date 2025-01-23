@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
@@ -43,6 +42,18 @@ h1:hover {
 }
 
 h2 {
+  text-align: center;
+  font-family: "Funky";
+  font-size: 4rem;
+  color: #9bacee;
+}
+
+h2:hover {
+  text-shadow: 0 0 15px rgb(124, 150, 202);
+  transition: all 0.2s ease-out;
+}
+
+h3 {
   color: rgb(255, 255, 255);
   font-size: 30px;
   font-family: "Montserrat", sans-serif;

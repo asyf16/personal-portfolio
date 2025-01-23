@@ -25,30 +25,34 @@ function Nav() {
           <div className="menu-icon" onClick={handleClick}>
             {click ? (
               <FontAwesomeIcon
-                icon={faBars}
-                style={{ color: "#938ac8", fontSize: "2rem", paddingBottom: "0.2rem" }}
+                icon={faTimes}
+                style={{
+                  color: "#938ac8",
+                  fontSize: "2rem",
+                  paddingBottom: "0.2rem",
+                }}
               />
             ) : (
               <FontAwesomeIcon
-                icon={faTimes}
-                style={{ color: "#938ac8", fontSize: "2rem", paddingBottom: "0.2rem" }}
+                icon={faBars}
+                style={{
+                  color: "#938ac8",
+                  fontSize: "2rem",
+                  paddingBottom: "0.2rem",
+                }}
               />
             )}
           </div>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li
-              className="nav-item"
-            >
+            <li className="nav-item">
               <a href="#home" className="nav-links" onClick={closeMenu}>
                 Home
               </a>
             </li>
-            <li
-              className="nav-item"
-            >
-              <a href="#about" className="nav-links" onClick={closeMenu}>
-                About
+            <li className="nav-item">
+              <a href="#experience" className="nav-links" onClick={closeMenu}>
+                Experience
               </a>
             </li>
             <li className="nav-item">

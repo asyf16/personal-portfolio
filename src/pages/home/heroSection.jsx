@@ -48,7 +48,7 @@ function HeroSection() {
       <div className="hero-container" id="home">
         <video src="/bg2.mp4" autoPlay loop muted />
         <div className="hero-content">
-          <h2 style={{ marginBottom: "2rem" }}>{text} I&apos;m</h2>
+          <h3 style={{ marginBottom: "2rem" }}>{text} I&apos;m</h3>
           <h1 style={{ marginBottom: "2rem" }}>Aurora Shi,</h1>
           <p style={{ marginBottom: "2rem" }}>
             A Software Engineering student at the University of Waterloo

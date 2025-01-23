@@ -1,0 +1,57 @@
+.scroll-text {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.scrollTop-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  background-color: #0a0a11;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #9bacee;
+  padding-bottom: 2rem;
+}
+
+.fish {
+  animation: up 1.5s infinite;
+  -webkit-animation: up 1.5s infinite;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    border-left: 1.5px solid #ffffff;
+    border-bottom: 1.5px solid #ffffff;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(-15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(-15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}

@@ -1,0 +1,31 @@
+.parallax {
+  background-color: #0a0a11;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vw;
+  z-index: -80;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.parallaxproject {
+  position: absolute;
+  font-size: 5em;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.parallax h1 {
+  margin: 0rem;
+  padding: 0em;
+  color: azure;
+  text-shadow: 0 0 15px rgb(183, 180, 235);
+}
