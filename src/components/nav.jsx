@@ -4,6 +4,7 @@ import { useState } from "react";
 import { parallaxControl } from "./parallaxControl";
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [click, setClick] = useState(false);
@@ -17,62 +18,62 @@ function Nav() {
   };
   return (
     <>
-      <nav className="nav">
-        <div className="nav-container">
-          <a href="/" className="nav-logo" onClick={closeMenu}>
-            Aurora Shi
-          </a>
-          <div className="menu-icon" onClick={handleClick}>
-            {click ? (
-              <FontAwesomeIcon
-                icon={faTimes}
-                style={{
-                  color: "#938ac8",
-                  fontSize: "2rem",
-                  paddingBottom: "0.2rem",
-                }}
-              />
-            ) : (
-              <FontAwesomeIcon
-                icon={faBars}
-                style={{
-                  color: "#938ac8",
-                  fontSize: "2rem",
-                  paddingBottom: "0.2rem",
-                }}
-              />
-            )}
-          </div>
+        <nav className="nav">
+          <div className="nav-container">
+            <Link to="/" className="nav-logo" onClick={closeMenu}>
+              Aurora Shi
+            </Link>
+            <div className="menu-icon" onClick={handleClick}>
+              {click ? (
+                <FontAwesomeIcon
+                  icon={faTimes}
+                  style={{
+                    color: "#938ac8",
+                    fontSize: "2rem",
+                    paddingBottom: "0.2rem",
+                  }}
+                />
+              ) : (
+                <FontAwesomeIcon
+                  icon={faBars}
+                  style={{
+                    color: "#938ac8",
+                    fontSize: "2rem",
+                    paddingBottom: "0.2rem",
+                  }}
+                />
+              )}
+            </div>
 
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <a href="#home" className="nav-links" onClick={closeMenu}>
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#experience" className="nav-links" onClick={closeMenu}>
-                Experience
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#portfolio" className="nav-links" onClick={closeMenu}>
-                Portfolio
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#projects" className="nav-links" onClick={closeMenu}>
-                Projects
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#contact" className="nav-links" onClick={closeMenu}>
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
+              <li className="nav-item">
+                <Link to="/" className="nav-links" onClick={closeMenu}>
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-links" onClick={closeMenu}>
+                  Experience
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/portfolio" className="nav-links" onClick={closeMenu}>
+                  Portfolio
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/projects" className="nav-links" onClick={closeMenu}>
+                  Projects
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/contact" className="nav-links" onClick={closeMenu}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
     </>
   );
 }
