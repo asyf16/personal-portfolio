@@ -31,7 +31,7 @@ function Timeline() {
           </h3>
           <h4 className="vertical-timeline-element-subtitle">New York, NY</h4>
           <p>
-            - Contributing to the Engineering Subscriptions and Growth team.
+            - Contributing to the Engineering Subscriptions and Growth team
           </p>
         </VerticalTimelineElement>
 
@@ -50,7 +50,7 @@ function Timeline() {
           <h4 className="vertical-timeline-element-subtitle">Waterloo, ON</h4>
           <p>
             - Developing Options Strategy Builder to create complex strategies
-            for stock profit analysis.
+            for stock profit analysis
           </p>
           <p>
           - Collaborated on React dashboard for quantitative trading models for users to visualize stock buy/sell signals
@@ -94,11 +94,11 @@ function Timeline() {
           <h4 className="vertical-timeline-element-subtitle">Waterloo, ON</h4>
           <p>
             - Redesigned application&apos;s cryptographic risk scoring process,
-            enhancing risk assessment accuracy by 80%.
+            enhancing risk assessment accuracy by 80%
           </p>
           <p>
             - Collaborated with QA team to resolve system bugs, resulting in a
-            60% reduction in application failures and efficiency increase.
+            60% reduction in application failures and efficiency increase
           </p>
         </VerticalTimelineElement>
 
@@ -120,7 +120,7 @@ function Timeline() {
             user-friendly contact page using <b>React.js</b>
           </p>
           <p>
-            - Implemented edits tailored to client specifications and feedback.
+            - Implemented edits tailored to client specifications and feedback
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

@@ -34,24 +34,24 @@
 
 @keyframes up {
   0% {
-    transform: translate(0);
+    transform: translate(-5);
   }
   20% {
     transform: translateY(-15px);
   }
   40% {
-    transform: translate(0);
+    transform: translate(-5);
   }
 }
 
 @-webkit-keyframes up {
   0% {
-    transform: translate(0);
+    transform: translate(-5);
   }
   20% {
     transform: translateY(-15px);
   }
   40% {
-    transform: translate(0);
+    transform: translate(-5);
   }
 }

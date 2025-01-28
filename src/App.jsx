@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Projects from "./pages/projects";
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -14,10 +15,11 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Projects />} />
-          <Route path="/projects" element={<Portfolio />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

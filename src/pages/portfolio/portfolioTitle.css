@@ -1,0 +1,15 @@
+.portfolio-title-container{
+
+}
+
+.portfolio-title-container p {
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    color:  #938ac8;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+  }

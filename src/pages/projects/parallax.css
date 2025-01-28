@@ -23,9 +23,13 @@
   pointer-events: none;
 }
 
-.parallax h1 {
+.parallax h2 {
   margin: 0rem;
   padding: 0em;
   color: azure;
   text-shadow: 0 0 15px rgb(183, 180, 235);
+}
+
+.parallax h2:hover {
+  text-shadow: 0 0 15px rgb(255, 255, 255);
 }

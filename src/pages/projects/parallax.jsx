@@ -34,7 +34,7 @@ function Parallax() {
           id="leaf"
         ></img>
         <img src="https://i.imgur.com/tzTBnut.png" alt="background"></img>
-        <h1 className="parallaxproject">Projects</h1>
+        <h2 className="parallaxproject">Projects</h2>
       </section>
     </div>
   );

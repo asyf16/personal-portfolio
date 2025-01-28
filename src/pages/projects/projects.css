@@ -1,0 +1,118 @@
+body {
+  background-color: #0a0a11;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0a11;
+}
+
+.p-contain-1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-contain-2 {
+  width: 50%;
+  text-align: center;
+}
+
+.demo-image {
+  width: 90%;
+  border-radius: 2.5rem;
+  margin: 2rem;
+  margin-right: 0rem;
+}
+
+.demo-image:hover {
+  box-shadow: 0 0px 40px rgba(137, 137, 228, 0.606);
+  transform: scale(1.03);
+  transition: all 0.3s ease-out;
+}
+
+.project-container p {
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  color: #938ac8;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.links-wrap {
+  margin: 1rem;
+}
+.project-container h2 {
+  margin: 0rem;
+}
+
+.icon-house {
+  background: #1b1b31;
+  padding: 0rem;
+  margin: 0.3rem;
+  border-radius: 5rem;
+  border: 0px;
+}
+
+.icon-house:hover {
+  background: #252542;
+  padding: 0rem;
+  margin: 0.3rem;
+  border-radius: 5rem;
+  border: 0px;
+}
+
+.icon-house p {
+  font-size: 12px;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  color: #5555a4;
+}
+
+.icon-wrap {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.divider {
+  width: 70%;
+  margin: 0rem;
+}
+
+@media (max-width: 950px) {
+  .p-contain-1 {
+    width: 100%;
+  }
+
+  .p-contain-2 {
+    width: 100%;
+  }
+
+  .project-container img {
+    margin-right: 2rem;
+  }
+  .divider {
+    width: 85%;
+    margin: 0rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-container p {
+    font-size: 18px;
+  }
+
+  .project-container h2 {
+    font-size: 3rem;
+  }
+}
