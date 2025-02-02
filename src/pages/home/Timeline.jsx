@@ -11,11 +11,14 @@ import { faMountain } from "@fortawesome/free-solid-svg-icons";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { GiBullHorns } from "react-icons/gi";
 import { FaComputer } from "react-icons/fa6";
+import useScroll from "../../components/scrollcontext";
 
 function Timeline() {
+  const { experienceRef } = useScroll();
+
   return (
-    <section className="timeline-container" id="experience">
-      <h2 style={{textAlign:"center"}}>Experience</h2>
+    <section className="timeline-container" id="experience" ref={experienceRef}>
+      <h2 style={{ textAlign: "center" }}>Experience</h2>
       <VerticalTimeline lineColor={"white"}>
         <VerticalTimelineElement
           dateClassName="datecolor"
@@ -30,9 +33,7 @@ function Timeline() {
             Software Engineer | Bloomberg
           </h3>
           <h4 className="vertical-timeline-element-subtitle">New York, NY</h4>
-          <p>
-            - Contributing to the Engineering Subscriptions and Growth team
-          </p>
+          <p>- Contributing to the Engineering Subscriptions and Growth team</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -53,7 +54,8 @@ function Timeline() {
             for stock profit analysis
           </p>
           <p>
-          - Collaborated on React dashboard for quantitative trading models for users to visualize stock buy/sell signals
+            - Collaborated on React dashboard for quantitative trading models
+            for users to visualize stock buy/sell signals
           </p>
         </VerticalTimelineElement>
 
@@ -71,12 +73,10 @@ function Timeline() {
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Waterloo, ON</h4>
           <p>
-            - Developing admin dashboard for Toronto&apos;s largest
-            summer hackathon to manage user applications and event logistics
+            - Developing admin dashboard for Toronto&apos;s largest summer
+            hackathon to manage user applications and event logistics
           </p>
-          <p>
-            - Engineering hacker landing page for 1000+ applicants
-          </p>
+          <p>- Engineering hacker landing page for 1000+ applicants</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement

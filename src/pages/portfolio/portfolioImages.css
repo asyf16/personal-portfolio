@@ -1,6 +1,7 @@
 .image-container img {
   height: 47vh;
-  margin: 1.5rem;
+  margin: 1rem;
+  margin-top: 3rem;
 }
 
 .portfolio-images img:hover {
@@ -11,9 +12,9 @@
 
 .image-container h2 {
   font-size: 1.5rem;
-  margin-top: 1rem;
   margin-bottom: 0rem;
   padding: 0;
+  margin-left: 1.2rem;
 }
 
 .image-container p {
@@ -21,7 +22,7 @@
   padding: 0;
   margin: 0;
   font-size: 1rem;
-  margin
+  margin-left: 1.2rem;
 }
 
 .image-container {
@@ -31,36 +32,23 @@
 }
 
 .portfolio-images {
-  margin-top: 4rem;
-  justify-content: space-between;
+  justify-content: center;
   width: 94%;
   display: flex;
-  flex-direction: row;
-  overflow-y: hidden;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
 }
 
-.future-park {
-  width: 90%;
-  height:auto;
-}
-
-@media (min-width: 600px) {
-  .future-park {
-    height: 47vh;
-    width: auto;
+@media (max-width: 600px) {
+  .image-container img {
+    height: auto;
+    width: 90%;
   }
 }
 
 @media (max-width: 600px) {
-  .portfolio-images {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    overflow-y: hidden;
-  }
-
-  .image-container {
-    align-items: center;
+  .image-container img {
+    margin-top: 1.5rem;
   }
 }
