@@ -1,15 +1,48 @@
-.portfolio-title-container{
-
+.portfolio-title-container {
+  display: flex;
+  margin-top: 60px;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
 }
 
 .portfolio-title-container p {
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0rem;
+  color: #938ac8;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0.5rem;
+}
+
+.cat-container {
+  margin-top: 3rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.cat-rive {
+  width: 130px;
+  height: 130px;
+}
+
+@media (max-width: 600px) {
+  .cat-container {
+    margin-top: 2rem;
+    flex-direction: column;
     text-align: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-    color:  #938ac8;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 1rem;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
+
+  .portfolio-title-container p {
+    font-size: 16px;
+  }
+}

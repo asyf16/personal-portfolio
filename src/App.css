@@ -88,3 +88,9 @@ body::-webkit-scrollbar-thumb {
   background-color: #686195; /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
 }
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 3rem;
+  }
+}

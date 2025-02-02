@@ -38,7 +38,7 @@ function AboutSection() {
               and fishing. I also enjoy going to the gym and fencing 🤺.
             </p>
           </div>
-          <div data-aos="fade-in" data-aos-delay="800" className="socials">
+          <div data-aos="fade-in" data-aos-delay="700" className="socials">
             <a
               className="social-link"
               href="https://www.instagram.com/aurorashi16/"

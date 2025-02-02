@@ -1,4 +1,5 @@
 .parallax {
+  margin-top: 60px;
   background-color: #0a0a11;
   position: relative;
   display: flex;
@@ -32,4 +33,10 @@
 
 .parallax h2:hover {
   text-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+  .parallaxproject {
+    font-size: 4em;
+  }
 }

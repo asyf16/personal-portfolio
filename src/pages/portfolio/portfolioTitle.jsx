@@ -1,9 +1,24 @@
 import "./portfolioTitle.css";
+import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas";
 
 function PortfolioTitle() {
+  const { RiveComponent } = useRive({
+    src: "./cat.riv",
+    stateMachines: "State Machine 1",
+    autoplay: true,
+    layout: new Layout({
+      fit: Fit.Fill,
+      alignment: Alignment.TopCenter,
+    }),
+  });
   return (
     <div className="portfolio-title-container">
-      <h2>Portfolio</h2>
+      <div className="cat-container">
+        <div className="cat-rive">
+          <RiveComponent />
+        </div>
+        <h2>Portfolio</h2>
+      </div>
       <p>
         I love experimenting in all types of media such as oil painting,
         acrylic, sculpture, block printing, and mixed media.
