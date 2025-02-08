@@ -1,6 +1,6 @@
 import "./nav.css";
 import "../App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { parallaxControl } from "./parallaxControl";
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,18 +12,30 @@ function Nav() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
+  useEffect(() => {
+    // Check if there's a hash in the URL when the component mounts
+    if (window.location.hash === '#experience' && experienceRef?.current) {
+      experienceRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [experienceRef]);
+
   const closeMenu = () => {
     setClick(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
     window.removeEventListener("scroll", parallaxControl);
   };
 
-  const scrollToExperience = () => {
-      if (experienceRef?.current) {
-        experienceRef.current.scrollIntoView({ behavior: "smooth" });
-      }
-      closeMenu();
+  const scrollToExperience = (e) => {
+    e.preventDefault();
+    if (window.location.pathname !== '/') {
+      // Just navigate to home with the hash
+      window.location.href = '/#experience';
+    } else if (experienceRef?.current) {
+      experienceRef.current.scrollIntoView({ behavior: "smooth" });
+      setClick(false);
+    }
   };
+
   return (
     <>
         <nav className="nav">
@@ -60,9 +72,9 @@ function Nav() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-links" onClick={scrollToExperience}>
+                <a href="#experience" className="nav-links" onClick={scrollToExperience}>
                   Experience
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
                 <Link to="/portfolio" className="nav-links" onClick={closeMenu}>

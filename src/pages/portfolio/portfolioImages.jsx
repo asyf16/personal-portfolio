@@ -1,5 +1,6 @@
 import ScrollTop from "../../components/scrollTop";
 import "./portfolioImages.css";
+import Bark from "./bookCarousel";
 
 export function PortfolioImages() {
   return (
@@ -71,6 +72,8 @@ export function PortfolioImages() {
           <p>Marker on paper</p>
         </div>
       </div>
+
+      <Bark></Bark>
 
       <div className="portfolio-images">
         <div

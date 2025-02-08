@@ -1,0 +1,64 @@
+.Carouselimage {
+  width: 45vw;
+}
+
+.Carousel-wrap:hover {
+  box-shadow: 0 0px 40px rgba(137, 137, 228, 0.606);
+  transition: all 0.2s ease-out;
+}
+
+.Carouselimage img {
+  height: 45vw;
+}
+
+.Carouselcontainer {
+  background: #0a0818;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  margin-top:1rem;
+}
+
+.bark-title {
+  text-align: center;
+  color: #9bacee;
+  font-family: "Funky";
+  padding-top: 2rem;
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+
+.bark-link {
+  text-decoration: none;
+}
+.bark-title:hover {
+  text-shadow: 0 0 15px rgb(124, 150, 202);
+  transition: all 0.2s ease-out;
+}
+
+.bark-para {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 700px) {
+  .Carouselimage {
+    width: 70vw;
+  }
+
+  .Carouselimage img {
+    height: 70vw;
+  }
+
+  .Carouselcontainer p {
+    font-size: 1rem;
+  }
+}
+  
+  .Carouselcontainer p {
+    color: #938ac8;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+  }
