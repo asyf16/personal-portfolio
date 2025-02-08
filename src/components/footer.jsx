@@ -12,7 +12,7 @@ function Footer() {
     <div className={"footer-container"}>
       <div className={"footer-text-container"}>
         <p>Aurora Shi © 2025 </p>
-        <p>Made with {"<"}3 and a little bit of spite</p>
+        <p>Made with {"<"}3 and a little bit of spite...</p>
       </div>
 
       <div className="socials-container">

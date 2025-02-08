@@ -94,3 +94,30 @@ body::-webkit-scrollbar-thumb {
     font-size: 3rem;
   }
 }
+
+.sound-section {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.soundbutton {
+    background: #17172b;
+    border: 2px solid #5f578a;
+    color: #938ac8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.soundbutton:hover {
+    background: #938ac8;
+    color: #17172b;
+    transform: scale(1.1);
+}

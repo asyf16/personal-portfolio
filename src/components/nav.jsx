@@ -21,8 +21,12 @@ function Nav() {
 
   const closeMenu = () => {
     setClick(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    // Remove event listener first
     window.removeEventListener("scroll", parallaxControl);
+    // Use setTimeout to ensure redirect happens before scroll
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
   };
 
   const scrollToExperience = (e) => {

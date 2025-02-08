@@ -8,6 +8,7 @@ import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
 import Footer from "./components/footer";
 import { ScrollProvider } from "./components/scrollcontext";
+import Sound from './components/sound';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
+          <Sound />
         </ScrollProvider>
       </Router>
     </>

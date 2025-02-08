@@ -1,0 +1,137 @@
+.contact{    
+    background-color: #0A0A11;
+    margin-top: 60px;
+}
+
+
+.contact-wrap {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .contact-one {
+    width: 50%;
+    float: left;
+  }
+  
+  .contact-two {
+    width: 50%;
+    float: right;
+  }
+
+  .contact-one img{
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    border-radius: 50%;
+    width: 75%;
+  }
+
+  .contact-two h2{
+    text-align: left;
+    padding-top: 6rem;
+    padding-left: 1.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 20px;
+  }
+  
+  form input {
+    height: 40px;
+    width: 90%;
+    margin-top: 10px;
+    border: none;
+    border: 1px solid #938ac8;
+    border-radius: 6rem;
+    padding-left: 1rem;
+    background: #17172b;
+    font-family: 'Montserrat', sans-serif;
+    color:  #938ac8;
+  }
+
+  form input:hover, form textarea:hover{
+    border: 1.5px solid #8a9ec8;
+  }
+  
+  form textarea {
+    margin-top: 10px;
+    height: 70px;
+    border-radius: 1rem;
+    border: 1px solid #938ac8;
+    width: 90%;
+    padding-left: 1rem;
+    background: #17172b;
+    font-family: 'Montserrat', sans-serif;
+    color:  #938ac8;
+    padding-top: 1rem;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-weight: bold;
+    color:  #3b3653;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  form input:focus,
+  textarea:focus {
+    outline: none;
+  }
+  
+  form label {
+    margin-top: 15px;
+    color:  #938ac8;
+    font-weight: 600;
+  }
+  
+  form button {
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Funky';
+    color: #16162d;
+    font-size: 23px;
+    border-radius: 3rem;
+    border: 0px;
+    background-color: #6868a5;
+    padding: 3px 10px 3px;
+  }
+
+  .sendbutton:hover {
+    background-color: #323268;
+      }
+      
+
+
+  @media (max-width: 950px) {
+    .contact-one {
+      display: table-footer-group;
+      width: 100%;
+    }
+    .contact-two {
+      display: table-header-group;
+      width: 100%;
+    }
+    .contact-one img{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 50%;
+        width: 75%;
+      }
+      form {
+        padding: 40px;
+      }
+
+      .contact-two h1{
+        text-align: center;
+        padding-left: 0rem;
+        padding-top: 0rem;
+      }
+      
+        
+  }
