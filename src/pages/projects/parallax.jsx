@@ -1,4 +1,4 @@
-import "./Parallax.css";
+import "./parallax.css";
 import { parallaxControl } from "../../components/parallaxControl";
 
 function Parallax() {
