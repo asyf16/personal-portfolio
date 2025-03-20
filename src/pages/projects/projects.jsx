@@ -1,36 +1,162 @@
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import "./projects.css";
 import Aos from "aos";
 import ScrollTop from "../../components/scrollTop";
 import "aos/dist/aos.css";
 
 function Projectpage() {
-
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
   return (
     <>
+      <div className="project-container">
+        <div className="p-contain-1">
+          <div className="links-wrap">
+            <a href="https://github.com/asyf16/crowdfund" target="_blank">
+              <img
+                data-aos="fade-in"
+                data-aos-delay="400"
+                className="demo-image"
+                src="/CrowdFund.gif"
+                alt="Intellibin"
+              ></img>
+            </a>
+            <center>
+              <a href="https://github.com/asyf16/crowdfund" target="_blank">
+                <button data-aos="fade-in" data-aos-delay="400">
+                  Github
+                </button>
+              </a>
+              <a
+                href="https://www.youtube.com/watch?si=nO4tCv7REsGhUWYl&v=S20tTL5M9Ig&feature=youtu.be"
+                target="_blank"
+              >
+                <button data-aos="fade-in" data-aos-delay="400">
+                  Demo
+                </button>
+              </a>
+            </center>
+          </div>
+        </div>
+        <div className="p-contain-2">
+          <h2 data-aos="fade-in" data-aos-delay="400">
+            CrowdFund
+          </h2>
+          <p data-aos="fade-in" data-aos-delay="400">
+            Link your crypto wallet and build AI-powered trading workflows.
+            Choose or create AI agents to analyze markets, predict trends, and
+            auto-execute trades. Developers can share agents, protect IP with
+            Story Protocol, and earn royalties.
+          </p>
+          <p data-aos="fade-in" data-aos-delay="400">
+            {" "}
+            2nd place (1500 USD) Story track winner at TartanHacks 2025
+          </p>
+          <div className="icon-wrap">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
+              <p>React</p>
+            </button>
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
+              <p>TypeScript</p>
+            </button>
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
+              <p>React Flow</p>
+            </button>
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
+              <p>Python</p>
+            </button>
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
+              <p>FastAPI</p>
+            </button>
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
+              <p>KrakenAPI</p>
+            </button>
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
+              <p>Google Cloud</p>
+            </button>
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
+              <p>Live Blocks</p>
+            </button>
+          </div>
+        </div>
+        <img
+          data-aos="fade-in"
+          data-aos-delay="400"
+          className="divider"
+          src="https://i.imgur.com/UihZNpk.png"
+          alt="divider"
+        ></img>
+      </div>
+
       <div className="project-container" style={{ marginTop: "2rem" }}>
         <div className="p-contain-2">
           <h2 data-aos="fade-in">Silent Forest</h2>
-          <p data-aos="fade-in"data-aos-delay="400">
+          <p data-aos="fade-in" data-aos-delay="400">
             Need motivation to stay quiet and focused? Silent Forest is an
             interactive website that tracks your volume in real time. Stay
-            quiet, and you&apos;ll be visited by adorable, hand-animated animals. If
-            you are too loud, you may scare them away!
+            quiet, and you&apos;ll be visited by adorable, hand-animated
+            animals. If you are too loud, you may scare them away!
           </p>
           <div className="icon-wrap">
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Rive</p>
             </button>
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>React + Vite</p>
             </button>
-            <button data-aos="fade-in" data-aos-delay="400"className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Javascript</p>
             </button>
-            <button data-aos="fade-in" data-aos-delay="400"className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Adobe Illustrator</p>
             </button>
           </div>
@@ -48,10 +174,17 @@ function Projectpage() {
             </a>
             <center>
               <a href="https://silentforest.tech/" target="_blank">
-                <button data-aos="fade-in" data-aos-delay="400">Website</button>
+                <button data-aos="fade-in" data-aos-delay="400">
+                  Website
+                </button>
               </a>
-              <a href="https://rive.app/community/files/15986-30079-silent-forest/" target="_blank">
-                <button data-aos="fade-in" data-aos-delay="400">Rive</button>
+              <a
+                href="https://rive.app/community/files/15986-30079-silent-forest/"
+                target="_blank"
+              >
+                <button data-aos="fade-in" data-aos-delay="400">
+                  Rive
+                </button>
               </a>
             </center>
           </div>
@@ -82,19 +215,25 @@ function Projectpage() {
                 href="https://devpost.com/software/intellibin-4qu7co"
                 target="_blank"
               >
-                <button data-aos="fade-in" data-aos-delay="400">Devpost</button>
+                <button data-aos="fade-in" data-aos-delay="400">
+                  Devpost
+                </button>
               </a>
               <a
                 href="https://www.youtube.com/watch?v=fziGIb2MTAk&embeds_referring_euri=https%3A%2F%2Fdevpost.com%2F&source_ve_path=MjM4NTE&feature=emb_title"
                 target="_blank"
               >
-                <button data-aos="fade-in" data-aos-delay="400">Demo</button>
+                <button data-aos="fade-in" data-aos-delay="400">
+                  Demo
+                </button>
               </a>
             </center>
           </div>
         </div>
         <div className="p-contain-2">
-          <h2 data-aos="fade-in" data-aos-delay="400">IntelliBin</h2>
+          <h2 data-aos="fade-in" data-aos-delay="400">
+            IntelliBin
+          </h2>
           <p data-aos="fade-in" data-aos-delay="400">
             IntelliBin is an AI trashcan that handles your trash sorting for
             you! Simply place your trash onto our machine, and watch it be
@@ -107,28 +246,60 @@ function Projectpage() {
             at DeltaHacks X.
           </p>
           <div className="icon-wrap">
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>MongoDB</p>
             </button>
-            <button data-aos="fade-in" data-aos-delay="400"className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>FireBase</p>
             </button>
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>React</p>
             </button>
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Javascript</p>
             </button>
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Python</p>
             </button>
-            <button data-aos="fade-in" data-aos-delay="400"className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Arduino</p>
             </button>
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>C++</p>
             </button>
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Google Vision API</p>
             </button>
           </div>
@@ -144,7 +315,9 @@ function Projectpage() {
 
       <div className="project-container">
         <div className="p-contain-2">
-          <h2 data-aos="fade-in" data-aos-delay="400">EyeDentify</h2>
+          <h2 data-aos="fade-in" data-aos-delay="400">
+            EyeDentify
+          </h2>
           <p data-aos="fade-in" data-aos-delay="400">
             Never forget a face again! Made using Python&apos;s face recognition
             library, EyeDentify is a Raspberry Pi powered headset that allows
@@ -152,25 +325,53 @@ function Projectpage() {
             real-time facial recognition!
           </p>
           <div className="icon-wrap">
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>MongoDB</p>
             </button>
-            <button data-aos="fade-in" data-aos-delay="400"className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>React</p>
             </button>
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Javascript</p>
             </button>
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Python</p>
             </button>
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Raspberry PI</p>
             </button>
-            <button data-aos="fade-in" data-aos-delay="400"className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>AWS</p>
             </button>
-            <button data-aos="fade-in" data-aos-delay="400"className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>OpenCV</p>
             </button>
           </div>
@@ -188,10 +389,14 @@ function Projectpage() {
             </a>
             <center>
               <a href="https://github.com/asyf16/eyeDentify" target="_blank">
-                <button data-aos="fade-in"data-aos-delay="400">Github</button>
+                <button data-aos="fade-in" data-aos-delay="400">
+                  Github
+                </button>
               </a>
               <a href="https://youtu.be/KergMVdy5mk" target="_blank">
-                <button data-aos="fade-in" data-aos-delay="400">Demo</button>
+                <button data-aos="fade-in" data-aos-delay="400">
+                  Demo
+                </button>
               </a>
             </center>
           </div>
@@ -219,36 +424,58 @@ function Projectpage() {
             </a>
             <center>
               <a href="https://github.com/asyf16/calTrack" target="_blank">
-                <button data-aos="fade-in" data-aos-delay="400">Github</button>
+                <button data-aos="fade-in" data-aos-delay="400">
+                  Github
+                </button>
               </a>
               <a
                 to="https://devpost.com/software/caltrack-xjzb6k"
                 target="_blank"
               >
-                <button data-aos="fade-in" data-aos-delay="400">Devpost</button>
+                <button data-aos="fade-in" data-aos-delay="400">
+                  Devpost
+                </button>
               </a>
             </center>
           </div>
         </div>
         <div className="p-contain-2">
-          <h2 data-aos="fade-in" data-aos-delay="400">CalTrack</h2>
+          <h2 data-aos="fade-in" data-aos-delay="400">
+            CalTrack
+          </h2>
           <p data-aos="fade-in" data-aos-delay="400">
-            Don&apos;t give up on your New Year&apos;s resolution just yet... Created
-            using Google Cloud&apos;s Vision API, CalTrack is an intuitive
-            application that allows you to detect and track the calories in
-            every meal with AI from a simple photo of your food!
+            Don&apos;t give up on your New Year&apos;s resolution just yet...
+            Created using Google Cloud&apos;s Vision API, CalTrack is an
+            intuitive application that allows you to detect and track the
+            calories in every meal with AI from a simple photo of your food!
           </p>
           <div className="icon-wrap">
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Google Cloud Vision API</p>
             </button>
-            <button data-aos="fade-in" data-aos-delay="400"className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Python</p>
             </button>
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>OpenCV</p>
             </button>
-            <button data-aos="fade-in" data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Tkinter</p>
             </button>
           </div>
@@ -264,7 +491,9 @@ function Projectpage() {
 
       <div className="project-container">
         <div className="p-contain-2">
-          <h2 data-aos="fade-in" data-aos-delay="400">Average Calculator</h2>
+          <h2 data-aos="fade-in" data-aos-delay="400">
+            Average Calculator
+          </h2>
           <p data-aos="fade-in" data-aos-delay="400">
             Created for my high school, the Student Average Calculator increased
             the administration&apos;s efficiency by 240%, allowing instant
@@ -272,13 +501,25 @@ function Projectpage() {
             requirements by simply uploading a spreadsheet of the student data.
           </p>
           <div className="icon-wrap">
-            <button data-aos="fade-in"data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Python</p>
             </button>
-            <button data-aos="fade-in" data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Tkinter</p>
             </button>
-            <button data-aos="fade-in" data-aos-delay="400" className="icon-house">
+            <button
+              data-aos="fade-in"
+              data-aos-delay="400"
+              className="icon-house"
+            >
               <p>Python CSV Library</p>
             </button>
           </div>
@@ -302,7 +543,9 @@ function Projectpage() {
                 href="https://github.com/asyf16/Average-Calculator"
                 target="_blank"
               >
-                <button data-aos="fade-in" data-aos-delay="400">Github</button>
+                <button data-aos="fade-in" data-aos-delay="400">
+                  Github
+                </button>
               </a>
             </center>
           </div>
